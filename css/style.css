@@ -1,0 +1,41 @@
+:root {
+  --DarkGrayishBlue: hsl(217, 19%, 35%);
+  --DarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 13px;
+}
+body {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--DarkBlue);
+  background-color: var(--LightGrayishBlue);
+  min-height: 100vh;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Frontend Mentor Styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
