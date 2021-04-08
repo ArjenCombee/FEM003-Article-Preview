@@ -183,7 +183,6 @@ img {
     display: flex;
   }
   .share-state {
-    /* display: none; */
     background-color: var(--DarkGrayishBlue);
   }
   .share-state {
