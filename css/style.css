@@ -1,10 +1,11 @@
+/* BASICS STYLES */
 :root {
   --DarkGrayishBlue: hsl(217, 19%, 35%);
   --DarkBlue: hsl(214, 17%, 51%);
   --GrayishBlue: hsl(212, 23%, 69%);
   --LightGrayishBlue: hsl(210, 46%, 95%);
-  --font-heading: "Manrope", sans-serif;
-  --font-body: "Roboto", sans-serif;
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Roboto', sans-serif;
 }
 *,
 *::before,
@@ -18,9 +19,10 @@ html {
   font-size: 13px;
 }
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-weight: 500;
   color: var(--DarkBlue);
+  line-height: 1.6;
   background-color: var(--LightGrayishBlue);
   min-height: 100vh;
 }
@@ -31,7 +33,69 @@ img {
   object-position: center;
 }
 
-/* Frontend Mentor Styles */
+/* ARTICLE STYLES */
+.preview {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 25rem;
+  margin: 2rem auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* hide image radius bleed */
+}
+.preview__image {
+  height: 15rem;
+}
+.preview__body {
+  padding: 3rem 2rem 1rem;
+  letter-spacing: 0.5px;
+}
+.preview__body h3 {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.preview__footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.preview__footer .left {
+  /* width: 2.5rem;
+  height: 2.5rem; */
+}
+.photo-wrapper {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.profile-name,
+.profile-date {
+  padding-left: 1rem;
+}
+.profile-name {
+  font-weight: 700;
+  padding-top: 0.2rem;
+}
+.profile-date {
+  opacity: 0.7;
+}
+.preview__footer .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--LightGrayishBlue);
+}
+
+/* UTILITY */
+.active {
+}
+/* FRONTEND MENTOR STYLES */
 .attribution {
   font-size: 11px;
   text-align: center;
